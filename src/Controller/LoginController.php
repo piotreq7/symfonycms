@@ -9,11 +9,13 @@ use Symfony\Component\Routing\Annotation\Route;
 class LoginController extends AbstractController
 {
     /**
-     * @route("/")
+     * @route("/" , name="homepage")
      * @return Response
      */
     public function show()
     {
+
+
 
 
         return $this->render('frontpage.html.twig');

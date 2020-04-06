@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<ul>
+    {% for user in users %}
+        <li>
+        {{ user.id }}.{{ user.username|e }}, {{ user.password }} <a href="{{ path('user_edit',{id: user.id}) }}">edytuj </a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
